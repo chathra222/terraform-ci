@@ -13,8 +13,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Gitleaks action
-      uses: zricethezav/gitleaks-action@v1.6.0
+    - name: Secrets Scanner
+      uses: secret-scanner/action@0.2.1
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v2
