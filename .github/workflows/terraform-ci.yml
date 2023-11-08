@@ -16,11 +16,6 @@ jobs:
     - name: Secrets Scanner
       uses: secret-scanner/action@0.2.1
 
-    - name: GitLeaks Action
-      uses: zricethezav/gitleaks-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v2
 
