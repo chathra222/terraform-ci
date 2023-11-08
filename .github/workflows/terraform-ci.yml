@@ -18,6 +18,8 @@ jobs:
 
     - name: GitLeaks Action
       uses: zricethezav/gitleaks-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v2
